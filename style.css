@@ -1,0 +1,53 @@
+.todo {
+	text-align: center;
+} 
+
+ul li {
+	text-decoration: none;
+	list-style: none;
+	text-align: center;
+	cursor: pointer;
+	margin: 10px auto;
+	position: relative;
+	max-width: 500px;
+	border:1px solid black;
+}
+
+ul li:hover{
+	background-color: red;
+	transition: 0.7s ease;
+}
+
+
+
+ 
+ul li.checked {
+    background: skyblue;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+ul li.checked:before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 1px 3px 3px 0px;
+    top: -2px;
+    left: 15px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 5px;
+}
+
+.cancel {
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+
+.cancel:hover{
+	 background-color: skyblue;
+}
+
+ 
